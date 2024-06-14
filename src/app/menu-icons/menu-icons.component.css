@@ -1,0 +1,11 @@
+/* Estilo para el botón */
+.btn mat-icon {
+    color: white;
+    margin-bottom: 4px;
+}
+
+/* Estilo para el icono */
+.btn-icon {
+    font-size: 80px; /* Ajusta el tamaño según tus necesidades */
+   
+}
