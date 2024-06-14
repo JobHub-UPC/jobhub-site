@@ -1,0 +1,50 @@
+/* src/app/navbar/navbar.component.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E3734B; /* Color de fondo */
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand span {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar-brand input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column; /* Colocar el ícono encima del texto */
+    align-items: center; /* Centrar ícono y texto verticalmente */
+}
+
+.navbar-menu a .material-icons {
+    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.navbar-menu a:hover {
+    color: aquamarine;
+}
