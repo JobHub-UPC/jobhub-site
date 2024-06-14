@@ -9,13 +9,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenuIconsComponent } from './menu-icons/menu-icons.component';
 
 import { MatMenuModule } from '@angular/material/menu';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
   declarations: [
     AppComponent, // Asegúrate de incluir el componente aquí
     NavbarComponent,
-    MenuIconsComponent
+    MenuIconsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
