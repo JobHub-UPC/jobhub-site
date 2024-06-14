@@ -13,6 +13,8 @@ import { MenuIconsComponent } from './menu-icons/menu-icons.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent, // Asegúrate de incluir el componente aquí
@@ -27,6 +29,7 @@ import { RegisterComponent } from './register/register.component';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    AppRoutingModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
