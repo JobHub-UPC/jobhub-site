@@ -12,8 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenuIconsComponent } from './menu-icons/menu-icons.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
-
+import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 
 import { MatDialogModule } from '@angular/material/dialog';
@@ -29,7 +28,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent, // Asegúrate de incluir el componente aquí
+    AppComponent, 
     NavbarComponent,
     MenuIconsComponent,
     ProfileComponent
@@ -46,6 +45,7 @@ import { ProfileComponent } from './profile/profile.component';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    AppRoutingModule,
     MatDialogModule,
     MatInputModule,
     MatCardModule,
