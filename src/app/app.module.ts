@@ -13,6 +13,20 @@ import { MenuIconsComponent } from './menu-icons/menu-icons.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+
+import { HomeComponent } from './home/home.component';
+
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { PostComponent } from './post/post.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { PublicationFormComponent } from './publication-form/publication-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent, // Asegúrate de incluir el componente aquí
@@ -20,6 +34,10 @@ import { RegisterComponent } from './register/register.component';
     MenuIconsComponent,
     LoginComponent,
     RegisterComponent,
+    HomeComponent,
+    PostComponent,
+    SearchBarComponent,
+    PublicationFormComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +45,10 @@ import { RegisterComponent } from './register/register.component';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    MatDialogModule,
+    MatInputModule,
+    MatCardModule,
+    ReactiveFormsModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

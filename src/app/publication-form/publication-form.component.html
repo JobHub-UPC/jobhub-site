@@ -1,0 +1,13 @@
+<form [formGroup]="publicationForm" (ngSubmit)="submitPublication()" class="form-container">
+  <div>
+    <textarea id="content" formControlName="content" placeholder="Que deseas publicar"></textarea>
+  </div>
+
+  <div>
+    <button type="button">Add Image</button>
+    <button type="button">Add Link</button>
+  </div>
+
+  <button type="submit" [disabled]="!publicationForm.valid">Publish</button>
+  <button type="button" (click)="cancel()">Cerrar</button>
+</form>
