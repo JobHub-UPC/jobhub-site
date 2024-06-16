@@ -1,0 +1,73 @@
+/* Estilos generales del formulario */
+form {
+    width: 300px;
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  h2 {
+    text-align: center; /* Título centrado */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  /* Estilos de las etiquetas */
+  label {
+    display: block; /* Etiquetas en bloque */
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  /* Estilos de los campos de entrada */
+  input[type="text"],
+  textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el borde y el padding en el ancho total */
+    margin-bottom: 15px; /* Espacio entre campos */
+  }
+  
+  /* Estilos de los botones */
+  button {
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  button[type="submit"] { /* Botón "Publish" */
+    background-color: #f88600; /* Color naranja */
+    color: white; /* Texto blanco */
+    margin-right: 10px; /* Espacio a la derecha */
+  }
+  
+  button[type="button"] { /* Botón "Cerrar" */
+    background-color: #ccc; /* Color gris claro */
+    color: #333; /* Texto oscuro */
+  }
+  
+  /* Estilos de los botones de imagen y enlace */
+  .button-group {
+    display: flex; /* Alinea los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+    margin-bottom: 15px; /* Espacio debajo del grupo de botones */
+  }
+  
+  .button-group button {
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 8px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    display: flex; /* Alinea el contenido del botón */
+    align-items: center; /* Centra verticalmente el contenido */
+  }
+  
+  .button-group button img {
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+  }
+  

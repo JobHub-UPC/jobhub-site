@@ -1,0 +1,27 @@
+<div class="post-container" *ngFor="let post of posts">
+    <div class="post-header">
+      <img [src]="post.userImage" alt="User Image" class="user-image">
+      <div class="user-info">
+        <span class="user-name">{{ post.userName }}</span><br>
+        <span class="user-handle">{{ post.userHandle }}</span><br>
+        <span class="post-time">{{ post.time }}</span><br>
+      </div>
+    </div>
+    <div class="post-content">
+        <div class="post-content-text">
+            <span class="post-title">{{ post.title }}</span><br>
+            <span class="post-content-info">{{ post.content}}</span>
+        </div>
+        <img [src]="post.postImage" alt="Post Image" class="post-image" *ngIf="post.postImage">
+        <iframe [src]="post.postVideo" alt="Post Video" class="post-image" *ngIf="post.postVideo" ></iframe>  
+    </div>
+    <div class="post-actions">
+      <button class="action-button">
+        <i class="fas fa-heart"></i> Like {{ post.likes }} 
+      </button>
+      <button class="action-button">
+        <i class="fas fa-comment"></i> Comment {{ post.comments }}
+      </button>
+    </div>
+  </div>
+  
