@@ -24,7 +24,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PublicationFormComponent } from './publication-form/publication-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -32,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent, // Asegúrate de incluir el componente aquí
     NavbarComponent,
     MenuIconsComponent,
+    ProfileComponent
     LoginComponent,
     RegisterComponent,
     HomeComponent,

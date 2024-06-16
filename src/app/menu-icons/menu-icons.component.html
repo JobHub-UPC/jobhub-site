@@ -3,7 +3,7 @@
     <mat-icon class="btn-icon">person</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Ver Perfil</button>
+    <button mat-menu-item (click)="goToProfile()">Ver Perfil</button>
     <button mat-menu-item [matMenuTriggerFor]="configuracion">Configuración</button>
     <button mat-menu-item>Ayuda</button>
     <button mat-menu-item>Cerrar sesión</button>
