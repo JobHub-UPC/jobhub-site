@@ -4,7 +4,7 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.css']
+  styleUrls: ['./post.component.css','../navbar/navbar.component.css', '../publication-form/publication-form.component.css','../search-bar/search-bar.component.css']
 })
 export class PostComponent {
   posts = [

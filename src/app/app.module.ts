@@ -31,7 +31,7 @@ import { ProfileComponent } from './profile/profile.component';
     AppComponent, 
     NavbarComponent,
     MenuIconsComponent,
-    ProfileComponent
+    ProfileComponent,
     LoginComponent,
     RegisterComponent,
     HomeComponent,
