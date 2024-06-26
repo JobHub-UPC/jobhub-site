@@ -1,0 +1,26 @@
+<div class="job-listing-container">
+  <div class="job-list">
+    <div class="job-item" *ngFor="let job of jobs" (click)="selectJob(job)">
+      <div class="job-item-header">
+        <span class="job-title">{{ job.title }}</span>
+        <span class="company-name">{{ job.company }}</span>
+      </div>
+      <div class="job-location">
+        {{ job.location }}
+      </div>
+      <div class="job-time">
+        Hace {{ job.time }} horas
+      </div>
+    </div>
+  </div>
+
+  <div class="job-detail" *ngIf="selectedJob">
+    <h2>{{ selectedJob.title }}</h2>
+    <h3>{{ selectedJob.company }}</h3>
+    <p>{{ selectedJob.location }}</p>
+    <button class="apply-button">Postularme</button>
+    <div class="job-description">
+      {{ selectedJob.description }}
+    </div>
+  </div>
+</div>

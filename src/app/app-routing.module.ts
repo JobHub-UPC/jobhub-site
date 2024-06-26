@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PostComponent } from './post/post.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: PostComponent },
   { path: 'perfil', component: ProfileComponent },
+  { path: 'jobs', component: JobsComponent},
 ];
 
 @NgModule({

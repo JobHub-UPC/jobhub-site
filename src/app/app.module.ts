@@ -24,6 +24,7 @@ import { PublicationFormComponent } from './publication-form/publication-form.co
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ProfileComponent } from './profile/profile.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ProfileComponent } from './profile/profile.component';
     HomeComponent,
     PostComponent,
     SearchBarComponent,
-    PublicationFormComponent
+    PublicationFormComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
