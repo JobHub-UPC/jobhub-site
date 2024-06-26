@@ -32,7 +32,7 @@ import { ProfileComponent } from './profile/profile.component';
     AppComponent, // Asegúrate de incluir el componente aquí
     NavbarComponent,
     MenuIconsComponent,
-    ProfileComponent
+    ProfileComponent,
     LoginComponent,
     RegisterComponent,
     HomeComponent,
