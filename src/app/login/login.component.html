@@ -24,8 +24,12 @@
               >Mantener la sesión iniciada</label
             >
           </div>
-          <button class="form-button">Iniciar Sesión</button>
-          <button class="form-button">Crear nueva cuenta</button>
+          <button class="form-button" (click)="goToHome()">
+            Iniciar Sesión
+          </button>
+          <button class="form-button" (click)="goToRegister()">
+            Crear nueva cuenta
+          </button>
         </div>
       </form>
 

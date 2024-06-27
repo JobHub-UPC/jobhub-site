@@ -28,7 +28,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent, // Asegúrate de incluir el componente aquí
+    AppComponent, 
     NavbarComponent,
     MenuIconsComponent,
     ProfileComponent,

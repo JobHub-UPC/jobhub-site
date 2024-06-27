@@ -1,6 +1,13 @@
 /* Estilos generales del formulario */
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+
 form {
-    width: 300px;
+    width: 500px;
+    height: 300px;
     background-color: white; /* Fondo blanco */
     padding: 20px; /* Espaciado interno */
     border-radius: 8px; /* Bordes redondeados */
@@ -20,10 +27,16 @@ form {
     font-weight: bold; /* Texto en negrita */
   }
   
+  div textarea {
+    position: relative;
+  }
+
   /* Estilos de los campos de entrada */
   input[type="text"],
   textarea {
+    max-width: 95%;
     width: 100%; /* Ancho completo */
+    height: 200px;
     padding: 10px; /* Espaciado interno */
     border: 1px solid #ccc; /* Borde gris claro */
     border-radius: 4px; /* Bordes redondeados */
@@ -33,24 +46,35 @@ form {
   
   /* Estilos de los botones */
   button {
+    
     padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Sin borde */
+
     border-radius: 4px; /* Bordes redondeados */
     cursor: pointer; /* Cursor de mano al pasar el ratón */
-    font-weight: bold; /* Texto en negrita */
+    font-weight: 500;
   }
   
   button[type="submit"] { /* Botón "Publish" */
     background-color: #f88600; /* Color naranja */
     color: white; /* Texto blanco */
-    margin-right: 10px; /* Espacio a la derecha */
+    width: 100%;
+    margin-top: 10px;
   }
   
   button[type="button"] { /* Botón "Cerrar" */
     background-color: #ccc; /* Color gris claro */
     color: #333; /* Texto oscuro */
+    
   }
   
+  button[type="close"] {
+    position: absolute;
+    background-color: transparent;
+    color: #333;
+    padding: 0;
+    margin-left: 20px;
+  }
+
   /* Estilos de los botones de imagen y enlace */
   .button-group {
     display: flex; /* Alinea los botones horizontalmente */
@@ -59,15 +83,10 @@ form {
   }
   
   .button-group button {
-    background-color: #f0f0f0; /* Color de fondo gris claro */
-    border: 1px solid #ccc; /* Borde gris claro */
-    padding: 8px; /* Espaciado interno */
-    border-radius: 4px; /* Bordes redondeados */
     display: flex; /* Alinea el contenido del botón */
     align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center;
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
   }
-  
-  .button-group button img {
-    margin-right: 5px; /* Espacio entre la imagen y el texto */
-  }
-  
