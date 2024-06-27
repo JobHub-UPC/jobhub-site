@@ -7,10 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu-icons.component.css']
 })
 export class MenuIconsComponent {
-  // Aquí podrías agregar lógica específica del componente si la necesitas
-  constructor(private router: Router) { }
-
-  goToProfile(): void {
-    this.router.navigate(['/profile']);
+  constructor (private router : Router) {}
+  goToProfile() {
+    this.router.navigate(['/perfil']);
   }
 }

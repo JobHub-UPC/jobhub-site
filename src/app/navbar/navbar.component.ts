@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css', '../menu-icons/menu-icons.component.css']
 })
 export class NavbarComponent {
-  // Código del componente si es necesario
+
 }
