@@ -1,26 +1,94 @@
-<div class="job-listing-container">
-  <div class="job-list">
-    <div class="job-item" *ngFor="let job of jobs" (click)="selectJob(job)">
-      <div class="job-item-header">
-        <span class="job-title">{{ job.title }}</span>
-        <span class="company-name">{{ job.company }}</span>
-      </div>
-      <div class="job-location">
-        {{ job.location }}
-      </div>
-      <div class="job-time">
-        Hace {{ job.time }} horas
+<div class="main-container">
+  <div class="job-listing-container">
+    <div class="job-list">
+      <div class="job-item" *ngFor="let job of jobs" (click)="selectJob(job)">
+        <div class="job-item-header">
+          <span class="job-title">{{ job.title }}</span>
+          <span class="company-name">{{ job.company }}</span>
+        </div>
+        <div class="job-location">
+          {{ job.location }}
+        </div>
+        <div class="job-time">Hace {{ job.time }} horas</div>
       </div>
     </div>
-  </div>
 
-  <div class="job-detail" *ngIf="selectedJob">
-    <h2>{{ selectedJob.title }}</h2>
-    <h3>{{ selectedJob.company }}</h3>
-    <p>{{ selectedJob.location }}</p>
-    <button class="apply-button">Postularme</button>
-    <div class="job-description">
-      {{ selectedJob.description }}
+    <div class="job-detail" *ngIf="selectedJob">
+      <h2>{{ selectedJob.title }}</h2>
+      <h3>{{ selectedJob.company }}</h3>
+      <p>{{ selectedJob.location }}</p>
+      <button class="apply-button">Postularme</button>
+      <div class="job-description">
+
+        <div class="job-details-icons">
+          <div class="detail-item">
+              <img src="assets/img/suitcase.svg" alt="Tipo de contrato">
+              <span>Contrato por Inicio o Incremento de Actividad</span>
+              
+          </div>
+          <div class="detail-item">
+              <img src="assets/img/time2.svg" alt="Jornada laboral">
+              <span>Tiempo completo</span>
+          </div>
+          <div class="detail-item">
+              <img src="assets/img/building.svg" alt="Modalidad de trabajo">
+              <span>Presencial y remoto</span>
+          </div>
+      </div>
+      
+      <section class="job-requeriments">
+        <br>
+        <h1>¡Únete a la revolución de la energía solar con Sol Perú!</h1>
+        <br>
+        <p>
+          Sol Perú, empresa líder en soluciones de energía renovable, busca un
+          apasionado Analista de Datos (Generación Solar) para impulsar nuestro
+          crecimiento y contribuir a un futuro más sostenible.
+        </p>
+        <br>
+        <h2>¿Qué buscamos?</h2>
+        <ul>
+          <li>Profesional en Ingeniería Industrial, Estadística, Informática, Administración de empresas o carreras afines.</li>
+          <li>Dominio avanzado de Excel.</li>
+          <li>Experiencia comprobada en herramientas de visualización de datos (Tableau, Power BI, Looker u otro).</li>
+          <li>Mínimo 2 años de experiencia en análisis de datos en el sector energético o industrial.</li>
+          <li>Disponibilidad para trabajar en nuestra planta de Arequipa.</li>
+        </ul>
+        <br>
+        <h2>¿Cuáles serán tus desafíos?</h2>
+        <ul>
+          <li>Recopilar, procesar y analizar datos de generación de energía solar de nuestras plantas.</li>
+          <li>Desarrollar modelos predictivos para optimizar la producción y eficiencia energética.</li>
+          <li>Crear reportes y dashboards interactivos para la toma de decisiones estratégicas.</li>
+          <li>Participar en proyectos de mejora continua de nuestros sistemas de generación solar.</li>
+        </ul>
+        <br>
+        <h2>¿Qué ofrecemos?</h2>
+        <ul>
+          <li>Oportunidad de formar parte de una empresa innovadora y comprometida con el medio ambiente.</li>
+          <li>Desarrollo profesional en un entorno dinámico y desafiante.</li>
+          <li>Atractivo paquete de remuneración y beneficios.</li>
+          <li>Excelente clima laboral y oportunidades de crecimiento.</li>
+        </ul>
+        <br>
+        <p>
+          Sol Perú valora la diversidad y promueve la inclusión. ¡Únete a nuestro equipo y construyamos juntos un futuro más brillante!
+        </p>
+        <br>
+        <h1 class="bold">¡Postula ahora y sé parte del cambio!</h1>
+        <br>
+        <h2>Requerimientos</h2>
+        <ul>
+          <li>Educación mínima: Universitario</li>
+          <li>2 años de experiencia</li>
+          <li>Conocimientos: Microsoft Excel, Tableau, Power BI, Looker.</li>
+        </ul>
+        <br>
+        <h1 class="bold">¡Te esperamos!</h1>
+
+      </section>        
+
+      </div>
     </div>
   </div>
 </div>
