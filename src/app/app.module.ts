@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
@@ -21,14 +21,14 @@ import { MatCardModule } from '@angular/material/card';
 import { PostComponent } from './post/post.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PublicationFormComponent } from './publication-form/publication-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
     NavbarComponent,
     MenuIconsComponent,
     ProfileComponent,
@@ -39,18 +39,20 @@ import { ProfileComponent } from './profile/profile.component';
     SearchBarComponent,
     PublicationFormComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatButtonModule,
-    MatMenuModule,
-    AppRoutingModule,
-    MatDialogModule,
-    MatInputModule,
-    MatCardModule,
-    ReactiveFormsModule,
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatButtonModule,
+        MatMenuModule,
+        AppRoutingModule,
+        MatDialogModule,
+        MatInputModule,
+        MatCardModule,
+        ReactiveFormsModule,
+        FormsModule,
+        HttpClientModule
+    ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
